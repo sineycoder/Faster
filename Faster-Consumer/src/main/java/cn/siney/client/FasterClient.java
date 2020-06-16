@@ -25,7 +25,7 @@ public class FasterClient {
     }
 
     public void send(FasterInvocation invocation){
-        NioEventLoopGroup group = new NioEventLoopGroup();
+        NioEventLoopGroup group = new NioEventLoopGroup(1);
         try {
             FasterHandler handler = new FasterHandler(invocation);
             bootstrap = new Bootstrap()

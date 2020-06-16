@@ -23,8 +23,6 @@ public class FasterHandler extends SimpleChannelInboundHandler<FasterInvocation>
         LocalRegistry registry = LocalRegistry.getInstance();
         Object instance;
         Class<?> clazz;
-        Thread.sleep(10000);
-
         if((clazz = registry.getInterface(msg.getInterfaceName())) != null){//本地接口实现类的缓存
             if((instance = registry.getSingleton(msg.getInterfaceName())) == null){//接口实现类对象缓存
                 synchronized (LocalRegistry.class){

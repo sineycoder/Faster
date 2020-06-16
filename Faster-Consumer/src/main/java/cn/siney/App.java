@@ -10,8 +10,7 @@ import cn.siney.service.Service;
  */
 public class App
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ){
         Service proxy = new JDKProxy().createProxy(Service.class);
         String res = proxy.sayHello("nihao");
         System.out.println(res);

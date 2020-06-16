@@ -9,8 +9,10 @@
         <module name="Faster-Utils" />
         <module name="Faster-Consumer" />
         <module name="Faster-Provider" />
-        <module name="Faster-Annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Faster-Annotation" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

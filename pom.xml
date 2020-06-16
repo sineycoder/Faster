@@ -12,6 +12,7 @@
     <module>Faster-Utils</module>
     <module>Faster-Consumer</module>
     <module>Faster-Annotation</module>
+    <module>Faster-Annotation</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -31,7 +32,7 @@
     <dependencies>
       <dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
+        <artifactId>spring-context</artifactId>
         <version>${spring.version}</version>
       </dependency>
 
