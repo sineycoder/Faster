@@ -1,56 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>Faster</artifactId>
+    <groupId>cn.siney</groupId>
+    <version>v1.0</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cn.siney</groupId>
-  <artifactId>Faster</artifactId>
-  <version>v1.0</version>
-  <modules>
-    <module>Faster-Provider</module>
-    <module>Faster-Utils</module>
-    <module>Faster-Consumer</module>
-    <module>Faster-Annotation</module>
-  </modules>
-  <packaging>pom</packaging>
+  <artifactId>Faster-Consumer</artifactId>
 
-  <name>Faster</name>
+  <name>Faster-Consumer</name>
 
-  <properties>
-    <VERSION>v1.0</VERSION>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <spring.version>5.2.5.RELEASE</spring.version>
-    <junit.version>4.12</junit.version>
-    <netty.version>4.1.42.Final</netty.version>
-  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
 
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+    </dependency>
 
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-all</artifactId>
-        <version>${netty.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-
-
+    <dependency>
+      <groupId>cn.siney</groupId>
+      <artifactId>Faster-Utils</artifactId>
+      <version>v1.0</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
