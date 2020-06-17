@@ -11,8 +11,8 @@
     <module>Faster-Provider</module>
     <module>Faster-Utils</module>
     <module>Faster-Consumer</module>
-    <module>Faster-Annotation</module>
-    <module>Faster-Annotation</module>
+    <module>Faster-Demo</module>
+      <module>Faster-Entity</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -26,6 +26,7 @@
     <spring.version>5.2.5.RELEASE</spring.version>
     <junit.version>4.12</junit.version>
     <netty.version>4.1.42.Final</netty.version>
+    <jedis.version>2.9.0</jedis.version>
   </properties>
 
   <dependencyManagement>
@@ -48,6 +49,20 @@
         <artifactId>netty-all</artifactId>
         <version>${netty.version}</version>
       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+      <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>${jedis.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.70</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 

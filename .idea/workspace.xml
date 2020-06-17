@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b5ad93c-1f24-4de6-bd01-478218a92021" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/interf/FasterScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/spring/Registrar/FasterImportBeanDefinitionRegistrar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/spring/config/FasterConfig.java" afterDir="false" />
+    <list default="true" id="8b5ad93c-1f24-4de6-bd01-478218a92021" name="Default Changelist" comment="初步写了提供者和消费者">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/client/JedisTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/config/ParamsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/proxy/JDKProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/resources/faster.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/src/main/java/cn/siney/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/src/main/java/cn/siney/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/src/main/java/cn/siney/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/src/main/java/cn/siney/service/ServiceTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Demo/src/main/java/cn/siney/service/impl/ServiceTwoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Entity/src/main/java/cn/siney/entity/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Entity/src/main/java/cn/siney/protocol/URL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/annotation/FasterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/config/ParamsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/decoder/FasterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/registry/RedisRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/server/JedisTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/spring/Registrar/FasterImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Provider/src/main/resources/faster.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Faster-Utils/src/main/java/cn/siney/PropertiesUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Annotation/Faster-Annotation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Annotation/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Consumer/Faster-Consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/client/FasterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/client/FasterClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Provider/Faster-Provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/client/FasterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/client/FasterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/decoder/FasterDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/decoder/FasterDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/decoder/FasterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/decoder/FasterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/encoder/FasterEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/encoder/FasterEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/handler/FasterReceiveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/handler/FasterReceiveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/protocol/FasterInvocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Entity/src/main/java/cn/siney/protocol/FasterInvocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/protocol/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Entity/src/main/java/cn/siney/protocol/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/proxy/JDKInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/proxy/JDKInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/proxy/JDKProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/proxy/ProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/proxy/ProxyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/service/Service.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Faster-Provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/decoder/FasterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/decoder/FasterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faster-Utils/Faster-Utils.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/decoder/FasterDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/decoder/FasterDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/decoder/FasterHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/encoder/FasterEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/encoder/FasterEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/initializer/FasterServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/initializer/FasterServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/interf/FasterScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/annotation/FasterScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/local/LocalRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/protocol/FasterInvocation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/protocol/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/server/FasterServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/provider/server/FasterServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/service/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/service/impl/ServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/spring/Registrar/FasterImportBeanDefinitionRegistrar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/spring/config/FasterConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +81,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/tools/maven/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\tools\maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -70,14 +107,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Faster-Entity/src/main/java/cn/siney" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -87,21 +122,21 @@
       <recent name="cn.siney" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.siney.protocol" />
-      <recent name="cn.siney.decoder" />
+      <recent name="cn.siney.consumer.entity" />
+      <recent name="cn.siney.consumer.encoder" />
+      <recent name="cn.siney.consumer.config" />
+      <recent name="cn.siney.config" />
+      <recent name="cn.siney.client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Consumer\src\main\java\cn\siney" />
-      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Provider\src\main\java\cn\siney\tt" />
+      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Entity\src\main\java\cn\siney" />
+      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Consumer\src\main\java\cn\siney\consumer\protocol" />
+      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Consumer\src\main\java\cn\siney\consumer\decoder" />
+      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Consumer\src\main\java\cn\siney\consumer" />
+      <recent name="C:\Users\Admin\Desktop\siney\code\Faster\Faster-Consumer\src\main\resources" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn compile -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
-      <command value="mvn install -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Client">
     <configuration name="App (1)" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.siney.App" />
       <module name="Faster-Consumer" />
@@ -115,12 +150,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.siney.consumer.App" />
+      <module name="Faster-Consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.siney.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.siney.App" />
       <module name="Faster-Provider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.siney.*" />
+          <option name="PATTERN" value="cn.siney.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.siney.App" />
+      <module name="Faster-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.siney.consumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +202,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.siney.tt.NettyClient" />
-      <module name="Faster-Provider" />
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.siney.Client" />
+      <module name="Faster-Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.siney.tt.*" />
+          <option name="PATTERN" value="cn.siney.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,75 +215,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyClient1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.siney.tt.NettyClient1" />
-      <module name="Faster-Consumer" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.siney.Server" />
+      <module name="Faster-Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.siney.tt.*" />
+          <option name="PATTERN" value="cn.siney.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.siney.tt.NettyServer" />
-      <module name="Faster-Provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.siney.tt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Faster-Annotation" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Faster-Annotation" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -230,16 +231,17 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Application.App (1)" />
-      <item itemvalue="Application.NettyClient" />
-      <item itemvalue="Application.NettyClient1" />
-      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.App (2)" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.App (1)" />
-        <item itemvalue="Application.NettyClient1" />
-        <item itemvalue="Application.NettyServer" />
+        <item itemvalue="Application.App (2)" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -265,18 +267,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592267431160</updated>
-      <workItem from="1592304627631" duration="564000" />
-      <workItem from="1592305195007" duration="9000" />
-      <workItem from="1592305365200" duration="224000" />
-      <workItem from="1592305591891" duration="132000" />
-      <workItem from="1592305725452" duration="23000" />
-      <workItem from="1592305750492" duration="278000" />
-      <workItem from="1592312111098" duration="1420000" />
     </task>
+    <task id="LOCAL-00001" summary="初步写了提供者和消费者">
+      <created>1592299610180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592299610180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -291,79 +291,99 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初步写了提供者和消费者" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步写了提供者和消费者" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Notifications" timestamp="1592267683276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="181" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1592267683276" />
+    <state x="552" y="181" key="#Project_Structure" timestamp="1592359204404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592359204404" />
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592298360480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592298360480" />
-    <state x="765" y="239" width="998" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1592305900991">
+    <state x="673" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592359197601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="239" width="998" height="582" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592305900991" />
-    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1592291535580">
+    <state x="673" y="328" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592359197601" />
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1592379332417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592291535580" />
-    <state x="548" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592290476944">
+    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592379332417" />
+    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1592374858297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="548" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592290476944" />
-    <state x="738" y="386" width="444" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592291214172">
+    <state x="690" y="300" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592374858297" />
+    <state x="548" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592377026566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="738" y="386" width="444" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592291214172" />
+    <state x="548" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592377026566" />
+    <state x="738" y="386" width="444" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592376660345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="386" width="444" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592376660345" />
+    <state x="742" y="408" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592375698892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="742" y="408" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1592375698892" />
+    <state x="714" y="19" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592374578341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="19" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592374578341" />
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592292596291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592292596291" />
-    <state x="715" y="226" key="#xdebugger.evaluate" timestamp="1592312840325">
+    <state x="715" y="227" key="#xdebugger.evaluate" timestamp="1592354910506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="715" y="226" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1592312840325" />
-    <state x="527" y="116" key="CommitChangelistDialog2" timestamp="1592299564796">
+    <state x="715" y="227" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1592354910506" />
+    <state x="527" y="116" key="CommitChangelistDialog2" timestamp="1592299605770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="527" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299564796" />
-    <state width="502" height="466" key="DebuggerActiveHint" timestamp="1592312830001">
+    <state x="527" y="116" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299605770" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1592374124111">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="502" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1592312830001" />
-    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1592305460306">
+    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592374124111" />
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom" timestamp="1592381035599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592305460306" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1592313688948">
+    <state width="1877" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592381035599" />
+    <state width="1877" height="272" key="GridCell.Tab.0.center" timestamp="1592381035599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592313688948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1592313688948">
+    <state width="1877" height="272" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592381035599" />
+    <state width="1877" height="272" key="GridCell.Tab.0.left" timestamp="1592381035599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592313688948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1592313688948">
+    <state width="1877" height="272" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592381035599" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right" timestamp="1592381035599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592313688948" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1592313688948">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592313688948" />
+    <state width="1877" height="272" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592381035599" />
     <state x="490" y="178" key="Maven.ArtifactSearchDialog" timestamp="1592291009502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="178" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592291009502" />
-    <state x="440" y="97" key="SettingsEditor" timestamp="1592312207887">
+    <state x="669" y="236" key="MultipleFileMergeDialog" timestamp="1592352550319">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="97" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592312207887" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1592267841408">
+    <state x="669" y="236" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592352550319" />
+    <state x="440" y="97" key="SettingsEditor" timestamp="1592371789486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592267841408" />
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592371789486" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1592299618655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299618655" />
     <state x="759" y="300" key="chooseDestDirectoryDialog" timestamp="1592291208830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -372,32 +392,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="658" y="421" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1592269940549" />
-    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592267791750">
+    <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1592381023842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592267791750" />
-    <state x="334" y="62" width="1251" height="753" key="new project wizard" timestamp="1592306002579">
+    <state x="647" y="275" width="626" height="490" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592381023842" />
+    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog" timestamp="1592352541679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="62" width="1251" height="753" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592306002579" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1592305757264">
+    <state x="722" y="235" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592352541679" />
+    <state x="334" y="224" key="new project wizard" timestamp="1592378858077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592305757264" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592305847775">
+    <state x="334" y="224" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592378858077" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1592370929538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592305847775" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592370929538" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592270464095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592270464095" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/spring/Registrar/FasterImportBeanDefinitionRegistrar.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/Faster-Provider/src/main/java/cn/siney/utils/PropertiesUtils.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Faster-Consumer/src/main/java/cn/siney/consumer/proxy/JDKInvocationHandler.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((BufferedInputStream)in).in" custom="java.io.BufferedInputStream" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

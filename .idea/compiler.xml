@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Faster-Utils" />
         <module name="Faster-Consumer" />
+        <module name="Faster-Demo" />
         <module name="Faster-Provider" />
+        <module name="Faster-Entity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

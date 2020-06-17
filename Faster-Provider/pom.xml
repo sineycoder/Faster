@@ -32,8 +32,24 @@
     </dependency>
 
     <dependency>
+      <groupId>cn.siney</groupId>
+      <artifactId>Faster-Entity</artifactId>
+      <version>v1.0</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
     </dependency>
   </dependencies>
 

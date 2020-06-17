@@ -1,55 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-    <artifactId>Faster</artifactId>
-    <groupId>cn.siney</groupId>
-    <version>v1.0</version>
-  </parent>
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>Faster-Consumer</artifactId>
+  <groupId>cn.siney</groupId>
+  <artifactId>Faster-Demo</artifactId>
+  <version>v1.0</version>
 
-  <name>Faster-Consumer</name>
+  <name>Faster-Demo</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
 
     <dependency>
-      <groupId>io.netty</groupId>
-      <artifactId>netty-all</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>cn.siney</groupId>
-      <artifactId>Faster-Utils</artifactId>
+      <artifactId>Faster-Provider</artifactId>
       <version>v1.0</version>
     </dependency>
 
     <dependency>
       <groupId>cn.siney</groupId>
-      <artifactId>Faster-Entity</artifactId>
+      <artifactId>Faster-Consumer</artifactId>
       <version>v1.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>redis.clients</groupId>
-      <artifactId>jedis</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>fastjson</artifactId>
     </dependency>
   </dependencies>
 
