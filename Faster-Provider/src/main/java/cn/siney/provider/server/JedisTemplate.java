@@ -4,11 +4,14 @@ import cn.siney.provider.config.ParamsConfig;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
+import java.util.Set;
+
 public class JedisTemplate {
 
     private int port;
     private String hostname;
     private JedisPool jedisPool;
+    private Set<String> keys;
 
     private static JedisTemplate instance = new JedisTemplate();
 
@@ -31,6 +34,14 @@ public class JedisTemplate {
         conf.setTestOnBorrow(false);//jedis 第一次启动时，会报错
         conf.setTestOnReturn(true);
         jedisPool = new JedisPool(conf, hostname, port, 5000);
+    }
+
+    public Set<String> keys(String pattern) {
+        return jedisPool.getResource().keys(pattern);
+    }
+
+    public void del(String... key){
+        jedisPool.getResource().del(key);
     }
 
     public void set(String key, String value){

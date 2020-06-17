@@ -56,6 +56,7 @@ public class FasterImportBeanDefinitionRegistrar implements ImportBeanDefinition
             registry.registerBeanDefinition(key, beanDefinition);
             RedisRegistry.getInstance().regist(key);
         });
+        RedisRegistry.getInstance().afterRegist();
     }
 
     private Map<String, String> doScan(Set<String> packages) {
